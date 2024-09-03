@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/topback"
+        android:src="@drawable/top_background1"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="340dp"/>
+
+    <TextView
+        android:id="@+id/lbWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topback"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/biru"
+        android:fontFamily="@font/bungee"
+        android:text="Welcome Back"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/lbWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawablePadding="16dp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/email"
+        android:textColorHint="#756C6C"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawablePadding="16dp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/password"
+        android:textColorHint="#756C6C"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <ImageView
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/txtPassword"
+        android:src="@drawable/btn_arrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:text="Dont have account? register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/biru"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
